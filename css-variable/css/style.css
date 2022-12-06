@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* déclaration de variables en CSS */
+:root {
+    --main-color: rgb(30, 95, 225);
+    --main-color-hover: rgba(30, 95, 225, 0.8);
+    --text-color: rgba(51, 51, 51, 0.3);
+    --shadow-color: rgb(0, 0, 0);
+    --box-shadow: 4px 4px 12px var(--text-color);
+    --border-radius: 5px;
+}
+
+body {
+    /* pour utiliser la variable, il faut mettre var(--text-color) */
+    color: var(--text-color);
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0;
+    color: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.btn {
+    padding: 10px 30px;
+    border-radius: var(--border-radius);
+}
+
+.btn-primary {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: var(--main-color-hover);
+    box-shadow: var(--box-shadow);
+}
+
+.btn-secondary {
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--main-color);
+    color: #fff;
+    box-shadow: var(--box-shadow);
+}
