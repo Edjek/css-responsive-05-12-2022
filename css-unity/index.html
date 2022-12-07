@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS - Unity</title>
+        <!-- Les link peuvent avoir l'attribut media pour préciser à quel média est destiné le lien -->
+        <link rel="stylesheet" media="(orientation : landscape)" href="styles.css" />
+        <link rel="stylesheet" href="css/print.css" media="print" />
+        <link rel="stylesheet" href="css/style.css" media="screen" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <h1>Les unitées de mesures</h1>
+
+            <h2></h2>
+            <div class="container">
+                <p>je suis un container pensé pour le responsive :</p>
+                <pre>
+        .container {
+            margin: auto;
+            max-width: 1080px;
+            min-width: 400px;
+            width: 90%;
+            min-height: 300px;
+        }                    
+                </pre>
+            </div>
+
+            <h2>Les pourcentages</h2>
+            <div class="item item1">
+                <h3>Je fais 50% de la largeur de mon parent, ici le body</h3>
+                <h3>Je ne peux pas avoir de hauteur relative au body</h3>
+                <div class="sub-item1">
+                    <h4>Je fais 50% de la largeur de mon parent</h4>
+                    <h4>Je fais 50% de la hauteur de mon parent</h4>
+                </div>
+            </div>
+
+            <h2>Les pixels</h2>
+            <div class="item item2">
+                <h3>Je fais 300px sur 300px</h3>
+            </div>
+
+            <h2>vh, vw relatifs à la taille de l'écran</h2>
+            <div class="item item3">
+                <h3>Je fais 33vw de la largeur de l'écran</h3>
+                <h3>je fais 50vh de la hauteur de l'écran</h3>
+                <div class="sub-item3">
+                    <h4>! Je fais 15vw sur 15vw, je suis aussi relative à la taille de l'écran, pas de mon parent!</h4>
+                </div>
+            </div>
+
+            <h2>vmin, vmax, relatifs au côté le plus petit ou le plus grand de l'écran</h2>
+            <div class="item item4">
+                <h3>Je fais 90vmin,je suis relatif au côté de l'écran le plus petit pour ma largeur</h3>
+                <h3>Je fais 10vmax, jesuis relatif au côté de l'écran le plus grand pour ma hauteur</h3>
+            </div>
+
+            <h2>rem, em relatifs à la taille de la police d'écriture</h2>
+            <div class="item item5">
+                <h3>Je fais 2rem, 2x la taille de la police de la page par defaut 16px</h3>
+                <h3>Je fais 2em, 2x la taille de la police de mon parent</h3>
+            </div>
+        </div>
+    </body>
+</html>

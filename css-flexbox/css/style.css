@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+}
+
+.wrap {
+    min-height: 300px;
+    background-color: rgb(62, 234, 62);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(26, 85, 235);
+}
