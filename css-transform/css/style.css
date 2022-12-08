@@ -14,12 +14,13 @@ h1 {
 .cube {
     width: 100px;
     height: 100px;
+    margin: auto;
     background-color: green;
     cursor: pointer;
     transform-origin: top left;
-    transition: transform 0.3s 1s;
+    transition: transform 0.3s;
 }
 
-.cube:hover {
+.wrapper:hover .cube {
     transform: translate(100px, 100px) rotate(45deg) scale(1.5);
 }
