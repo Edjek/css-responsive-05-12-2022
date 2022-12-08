@@ -26,9 +26,20 @@ p {
     border-radius: 5px;
     padding: 30px;
     margin: 30px;
+
+    /* La propriété {display:grid;} permet de créer des mises en page en divisant l'espace sous forme de grille  */
     display: grid;
+
+    /* La propriété {grid-template-columns:;} permet définir une grille explicite en spécifiant la taille de chaque colonne de la grille Css */
+    /* On peut préciser la taille des colonnes en px ou en fr(fraction, correspond à l'espace disponible) */
+    /* On peut utiliser la fonction repeat() pour mettre des valeurs qui se repètent */
+    /* grid-template-columns: 200px 100px 200px; */
     grid-template-columns: repeat(4, 1fr);
+
+    /* On peut préciser la taille des lignes, la valeur auto prend tout l'espace disponible */
     /* grid-template-rows: auto; */
+
+    /* {gap:;} permet de mettre de l'espace entre nos grilles */
     gap: 10px;
 }
 
@@ -39,6 +50,7 @@ p {
 }
 
 .item:nth-child(1) {
+    /* {grid-column: span ?;} permet de définir le nombre de colonne que notre element va prendre */
     grid-column: span 3;
 }
 

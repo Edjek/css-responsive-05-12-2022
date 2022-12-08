@@ -1,0 +1,211 @@
+:root {
+    --text-cl: #333;
+    --main-primary: rgb(0, 102, 255);
+    --main-primary-hover: rgb(14, 68, 150);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--text-cl);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-cl);
+}
+
+.container {
+    min-width: 380px;
+    max-width: 1000px;
+    width: 80%;
+    min-height: 200px;
+    margin: 50px auto;
+    padding: 30px;
+}
+
+/* BTN */
+.btn {
+    border-radius: 5px;
+    padding: 10px 30px;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: var(--main-primary);
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--main-primary-hover);
+}
+
+/* CUBE 1 */
+.cube {
+    width: 200px;
+    height: 200px;
+    margin: 50px 0;
+    background-color: var(--main-primary);
+    /* transition: 2s ; */
+    /* transition: width 1s 1s , height 2s 5s*/
+    transition: width 1s cubic-bezier(0.45, -0.38, 0.57, 1.43), height 1s;
+}
+
+.cube:hover {
+    width: 500px;
+    height: 300px;
+}
+
+/* CIRCLE */
+.container-circle {
+    background-color: red;
+    overflow: hidden;
+}
+
+.container-circle:hover .circle {
+    width: 150px;
+    height: 150px;
+    transform: translate(500px);
+    opacity: 1;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(38, 193, 85);
+    transition: 1.5s;
+    opacity: 0;
+    /* transition: width 1s, height 1s, margin-top 1s 1s; */
+}
+
+/* CUBE 2 */
+.cube-2 {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    transition: 1s;
+}
+
+.cube-2:hover {
+    /* transform: translate(100px, 100px); */
+    /* transform: scale(.5); */
+    /* transform: scaleX(1.5); */
+    /* transform: scaleY(1.5); */
+    /* transform: rotate(360deg); */
+    transform: rotate(45deg) scale(2) translateX(100px);
+}
+
+/* CUBE 3 */
+.cube-3 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: width 1s, height 1s 1s, transform 1s 2s;
+}
+
+.container-cube-3:hover .cube-3 {
+    width: 300px;
+    height: 300px;
+    transform: rotate(720deg);
+}
+
+.container-cube-3 {
+    background-color: red;
+}
+/* transition 1s */
+/* tranistion largeur 1s, la longueur 1s 1s, rotation 1s 2s */
+
+/* entourer notre carre d'une div */
+/*  ce sera de la div que le carré change */
+
+/* CIRCLE 2 */
+.circle-2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* background-color: green; */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: jump 3s 5s 3;
+}
+
+.cube {
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    margin: 150px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: jump 2s infinite alternate;
+}
+
+@keyframes jump {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* CIRCLE 3 */
+.circle-3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #333;
+    animation: dance 2s infinite alternate;
+}
+
+@keyframes dance {
+    from {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(500px);
+    }
+}
+
+/* div hauteur 100px background beige */
+/* on va cacher ce qui deborde */
+.text {
+    min-height: 100px;
+    background-color: beige;
+    overflow: hidden;
+}
+
+.text p {
+    animation: show 2s;
+}
+
+@keyframes show {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* trois cercle de 50px */
+/* dans une div flexbox */
+/* gap */
+
+/* keyframes download */
+/* from transform translateY 0 -> 100px */
+
+/* sur chaque rond */
+/* appele l'animation */
+/* nom 2s boucle alterne */
+
+/* sur le rond 2 delay */
+
+/* sur le rond 3 delay */

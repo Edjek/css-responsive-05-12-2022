@@ -91,8 +91,8 @@ p {
 
 /* rem, em | emphemeral unit / root empheral unit (unité relative à la police d'écriture) */
 .item5 {
-    font-size: 14px;
-    padding: 3em;
+    font-size: 16px;
+    padding: 1em;
 }
 
 .item5 p {
@@ -100,5 +100,11 @@ p {
 }
 
 .item5 p:nth-child(2) {
-    font-size: 2em;
+    font-size: 4vw;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 14px;
+    }
 }
