@@ -1,41 +1,52 @@
 /* article sur l'astuce de Richard Rutter */
 /* https://clagnut.com/blog/348/ */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     /* tricks de Richard Rutter pour que la taille du texte soit à 10px et que l'on utilise plus facilement les rem */
     /* font-size: 62.5%; */
+    font-size: 20px;
 }
 
 body {
     color: #fff;
-    font-size: 18px;
 }
 
 h1,
 h2 {
+    margin: 30px 0;
     color: #333;
     text-align: center;
 }
 
+p {
+    margin-bottom: 20px;
+}
+
 .wrapper {
     width: 80%;
-    margin: 50px auto;
+    margin: auto;
 }
 
 .container {
-    width: 90%;
-    height: 300px;
-    max-width: 1080px;
     min-width: 400px;
+    max-width: 1080px;
+    width: 90%;
+    min-height: 300px;
     margin: auto;
     background-color: beige;
     color: #333;
 }
 
 .item {
-    width: 200px;
+    width: 400px;
     min-height: 200px;
-    margin-bottom: 2px;
+    padding: 10px;
     background-color: #3199da;
 }
 
@@ -58,7 +69,7 @@ h2 {
     height: 300px;
 }
 
-/* vh, vw | viewport width / height (unité relative à la taille de l'écran) */
+/* vh (viewport width), vw (viewport height) | unité relative à la taille de l'écran */
 .item3 {
     width: 33vw;
     height: 50vh;
@@ -71,7 +82,7 @@ h2 {
     background-color: hsl(270, 67%, 65%);
 }
 
-/* vmin, vmax | viewport max / min (unité relative au côté le plus petit ou le plus grand) */
+/* vmin (viewport max), vmax (viewport min) | unité relative au côté le plus petit ou le plus grand */
 .item4 {
     width: 90vmin;
     height: 10vmax;
@@ -80,14 +91,14 @@ h2 {
 
 /* rem, em | emphemeral unit / root empheral unit (unité relative à la police d'écriture) */
 .item5 {
-    font-size: 10px;
-    padding: 2em;
+    font-size: 14px;
+    padding: 3em;
 }
 
-.item5 h3 {
+.item5 p {
     font-size: 2rem;
 }
 
-.item5 h3:nth-child(2) {
+.item5 p:nth-child(2) {
     font-size: 2em;
 }
