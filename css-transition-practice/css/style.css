@@ -13,6 +13,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: var(--text-cl);
+    font-size: 20px;
 }
 
 h1 {
