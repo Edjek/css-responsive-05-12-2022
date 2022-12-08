@@ -15,15 +15,16 @@ body {
 }
 
 h1 {
+    margin: 50px 0;
     padding: 20px;
     text-align: center;
 }
 
 /* DOWNLOAD */
 .container {
-    width: 600px;
-    height: 300px;
-    margin: 50px auto;
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,12 +36,11 @@ h1 {
     height: 50px;
     background-color: #333;
     border-radius: 100%;
-    /* utilisation de l'animation jump */
-    /* une animation peut contenir le nom, la durée, le delais, le nb de répétition, le sens de l'animation */
-    /* animation: jump 1s infinite alternate; */
 }
 
 .circle-1 {
+    /* utilisation de l'animation jump */
+    /* une animation peut contenir le nom, la durée, le delais, le nb de répétition, le sens de l'animation */
     animation: jump 0.4s infinite ease-in alternate;
 }
 
