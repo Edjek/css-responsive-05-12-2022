@@ -26,5 +26,5 @@ body {
 /* Un element HTML vaut 1 */
 h1 {
     /* la valeur !important remporte le combat et gagne sur les autres specificity */
-    text-align: left !important;
+    text-align: center !important;
 }
