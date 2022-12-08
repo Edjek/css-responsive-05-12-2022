@@ -16,6 +16,9 @@ body {
 h1 {
     margin-bottom: 50px;
     text-align: center;
+}
+
+pre {
     /* Color name */
     color: red;
 
@@ -36,4 +39,5 @@ h1 {
 
     /* hsla (hue, saturation, lightness, alpha)  */
     color: hsla(0, 100%, 50%, 1);
+    color: red;
 }
