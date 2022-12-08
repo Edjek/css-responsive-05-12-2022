@@ -16,11 +16,12 @@
 
 body {
     /* pour utiliser une variable, il faut mettre var(--text-color) */
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--text-color);
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
     margin: 50px 0;
     color: var(--main-color);
 }
