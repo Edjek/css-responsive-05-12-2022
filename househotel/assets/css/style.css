@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,900;1,400&family=Roboto:ital,wght@0,400;0,700;0,900;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.btn {
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: rgb(61, 107, 198);
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: rgb(21, 92, 235);
+}
+
+header {
+  padding: 15px 80px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.brand {
+  font-family: Nunito, sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(61, 107, 198);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.lang {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.lang a:nth-child(1) {
+  margin-right: 20px;
+}
+
+.lang img {
+  width: 35px;
+}
+
+.hero {
+  background-color: red;
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url(../img/hotel-3000.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(30px, 10vh, 100px);
+}
+
+.hero-title {
+  text-align: center;
+  font-style: italic;
+  font-size: 55px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.service {
+  padding: 50px;
+}
+
+.service h2 {
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  min-height: 450px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.2);
+}
+.card .card-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .card-title {
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */

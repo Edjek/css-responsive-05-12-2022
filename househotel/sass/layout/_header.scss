@@ -1,0 +1,34 @@
+header {
+    padding: 15px 80px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.brand {
+    font-family: Nunito, sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: $main-cl;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.lang {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.lang a:nth-child(1) {
+    margin-right: 20px;
+}
+
+.lang img {
+    width: 35px;
+}
+

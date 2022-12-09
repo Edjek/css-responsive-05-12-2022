@@ -1,0 +1,68 @@
+// HERO
+.hero {
+    background-color: red;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), transparent), url(../img/hotel-3000.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(30px,10vh,100px);
+}
+
+.hero-title {
+    text-align: center;
+    font-style: italic;
+    font-size: 55px;
+    font-weight: 900;
+    color: $text-cl-white;
+}
+
+// SERVICE
+.service {
+    padding: 50px;
+}
+
+.service h2{
+    font-size: 55px;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    min-height: 450px;
+    padding: 20px;
+    border-radius: $border-radius;
+    text-align: center;
+    box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+    &:hover {
+        box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.2);
+    }
+    .card-img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .card-title{
+        text-transform: uppercase;
+    }
+}
+
