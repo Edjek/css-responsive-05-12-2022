@@ -194,17 +194,40 @@ a {
     }
 }
 
-/* trois cercle de 50px */
-/* dans une div flexbox */
-/* gap */
+/* DOWNLOAD */
+.download{
+    width: 300px;
+    margin: 50px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
-/* keyframes download */
-/* from transform translateY 0 -> 100px */
+.circle-4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    animation: download 1.5s infinite linear;
+}
 
-/* sur chaque rond */
-/* appele l'animation */
-/* nom 2s boucle alterne */
+.circle-4:nth-child(2){
+    animation-delay: .5s;
+}
 
-/* sur le rond 2 delay */
+.circle-4:nth-child(3){
+    animation-delay: 1s;
+}
 
-/* sur le rond 3 delay */
+
+@keyframes download {
+    0% {
+       transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
